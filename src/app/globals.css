@@ -4,6 +4,7 @@
   --font-sans: "Noto Sans JP", "Hiragino Sans", sans-serif;
   --color-background: #ffffff;
   --color-foreground: #111111;
+  --color-brand: #1d4ed8;
 }
 
 @layer base {

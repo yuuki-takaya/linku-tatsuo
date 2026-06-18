@@ -34,3 +34,11 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## お問い合わせフォーム（Google フォーム）
+
+サイト各所の「お問い合わせ」ボタンをクリックすると、モーダルで Google フォームが開きます。
+
+- フォームのURLは `src/lib/data/business.ts` の `CONTACT_FORM_URL` で管理しています（差し替え可能。Google フォームの「送信」→「&lt;&gt;（埋め込み）」で得られる `https://docs.google.com/forms/d/e/.../viewform?embedded=true` を設定）。
+- 回答は、その Google フォームに紐づく送信先（フォームの回答／連携スプレッドシート）に届きます。
+- フォールバックとして、モーダル内および問い合わせセクションに `company@be-u.co.jp`（`CONTACT_EMAIL`）へのメールリンクを表示します。
