@@ -36,6 +36,12 @@ export default function Header() {
           >
             タグ
           </Link>
+          <Link
+            href="/business"
+            className="text-sm font-medium text-brand hover:opacity-70 transition-opacity tracking-wide"
+          >
+            企業の方へ
+          </Link>
         </nav>
 
         {/* Mobile hamburger */}
@@ -79,6 +85,13 @@ export default function Header() {
             onClick={() => setMenuOpen(false)}
           >
             タグ
+          </Link>
+          <Link
+            href="/business"
+            className="text-sm font-medium text-brand tracking-wide"
+            onClick={() => setMenuOpen(false)}
+          >
+            企業の方へ
           </Link>
         </div>
       )}
