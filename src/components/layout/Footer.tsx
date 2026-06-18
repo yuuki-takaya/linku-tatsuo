@@ -15,7 +15,7 @@ export default function Footer() {
             </p>
           </div>
 
-          <nav className="flex flex-col gap-2">
+          <nav aria-label="フッターナビゲーション" className="flex flex-col gap-2">
             <Link
               href="/"
               className="text-sm text-gray-500 hover:text-gray-900 transition-colors"
@@ -36,7 +36,7 @@ export default function Footer() {
             </Link>
           </nav>
 
-          <div className="text-xs text-gray-400 leading-relaxed">
+          <div className="text-xs text-gray-500 leading-relaxed">
             <p>
               {operator.service.role}：{operator.service.company}
             </p>
