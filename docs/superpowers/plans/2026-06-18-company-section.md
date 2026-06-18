@@ -1040,7 +1040,9 @@ git commit -m "feat: add /business company landing page"
 
 ---
 
-### Task 15: トップページに企業向け入口バンドを追加
+### Task 15: トップページの「記事一覧の後」に企業向け入口バンドを追加
+
+> **方針:** トップの主役は学生記事。企業バンドは記事一覧の **後ろ** に置き、文言も「まず記事を読ませる」方向にする（記事より先に営業を出さない）。
 
 **Files:**
 - Create: `src/components/home/CompanyBand.tsx`
@@ -1055,17 +1057,17 @@ import Link from "next/link";
 
 export default function CompanyBand() {
   return (
-    <section className="border-y border-gray-100 bg-gray-50/60">
+    <section className="border-t border-gray-100 bg-gray-50/60">
       <div className="max-w-6xl mx-auto px-6 py-10 md:py-12 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
         <div>
           <span className="block text-xs tracking-[0.35em] text-brand uppercase mb-2">
             For Companies
           </span>
           <p className="text-lg md:text-xl font-medium text-gray-900 leading-snug">
-            採用ご担当者の方へ。待つ採用から、声をかける採用へ。
+            採用ご担当者の方へ。記事を読んで、気になる学生に会いに行けます。
           </p>
           <p className="text-sm text-gray-500 mt-2">
-            記事で人柄を知ってから出会える、新しい採用の仕組み。
+            新潟の学生と出会う、新しい採用のかたち。
           </p>
         </div>
         <div className="flex items-center gap-3 shrink-0">
@@ -1073,7 +1075,7 @@ export default function CompanyBand() {
             href="/business"
             className="px-5 py-2.5 text-sm font-medium text-white bg-brand rounded-md hover:opacity-90 transition-opacity whitespace-nowrap"
           >
-            詳しく見る
+            企業の方へ
           </Link>
           <Link
             href="/business#contact"
@@ -1088,9 +1090,9 @@ export default function CompanyBand() {
 }
 ```
 
-- [ ] **Step 2: トップページに挿入**
+- [ ] **Step 2: トップページの記事一覧の後に挿入**
 
-`src/app/page.tsx` を以下に置き換える:
+`src/app/page.tsx` を以下に置き換える（`CompanyBand` は `SearchableArticleGrid` の **後**）:
 
 ```tsx
 import HeroSection from "@/components/home/HeroSection";
@@ -1104,8 +1106,8 @@ export default function Home() {
   return (
     <>
       <HeroSection people={people} articles={articles} />
-      <CompanyBand />
       <SearchableArticleGrid articles={articles} people={people} />
+      <CompanyBand />
     </>
   );
 }
@@ -1307,7 +1309,7 @@ Expected: 成功。ルート一覧に `/` と `/business` が表示される。
 - [ ] **Step 3: 開発サーバーで目視確認**
 
 Run: `npm run dev`（別ターミナル）、ブラウザで確認:
-- `http://localhost:3000/` — ヒーローと記事一覧の間に企業バンドが表示され、ボタンが `/business`・`/business#contact` に遷移
+- `http://localhost:3000/` — 学生記事が主役のまま表示され、**記事一覧の後ろ**に控えめな企業バンドが出る。ボタンが `/business`・`/business#contact` に遷移
 - `http://localhost:3000/business` — 10セクションが順に表示。料金（15万/30万）・成果報酬0円が記載どおり
 - `/business` の各CTA「お問い合わせ・ご相談」「プランについて相談する」クリックで `#contact` までスクロール
 - 問い合わせ：`NEXT_PUBLIC_TALLY_FORM_ID` 未設定なら mailto フォールバックが表示される（`mailto:company@be-u.co.jp`）
