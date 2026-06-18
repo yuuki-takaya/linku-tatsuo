@@ -13,7 +13,7 @@ import ContactSection from "@/components/business/ContactSection";
 export const metadata: Metadata = {
   title: "企業の方へ | LINK U — 待つ採用から、声をかける採用へ",
   description:
-    "新潟の学生200名以上のストーリー記事から、人柄を知って声をかける新しい採用。学生DB検索・スカウト・面談イベント・PR記事掲載。成果報酬0円。",
+    "学生200名以上のストーリー記事から、人柄を知って声をかける新しい採用。学生DB検索・スカウト・面談イベント・PR記事掲載。成果報酬0円。",
 };
 
 export default function BusinessPage() {

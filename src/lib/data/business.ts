@@ -44,10 +44,10 @@ export const CONTACT_FORM_URL =
   "https://docs.google.com/forms/d/e/1FAIpQLScNIX_WzT5cD5WyZN4qemNgVOcSk5eiYEcF78AcCeAkQZ6xCw/viewform?embedded=true";
 
 export const businessHero = {
-  eyebrow: "新潟県内企業の経営者・採用ご担当者様へ",
+  eyebrow: "企業の経営者・採用ご担当者様へ",
   titleTop: "待つ採用から、",
   titleBottom: "声をかける採用へ。",
-  lead: "LINK Uには、200名以上の新潟の学生のストーリー記事が集まっています。記事で人となりを知ってから、気になる学生へ採用オファー。出会いをその場限りで終わらせない、新しい採用の仕組みです。",
+  lead: "LINK Uには、200名以上の学生のストーリー記事が集まっています。記事で人となりを知ってから、気になる学生へ採用オファー。出会いをその場限りで終わらせない、新しい採用の仕組みです。",
 };
 
 export const painPoints: PainPoint[] = [
@@ -68,12 +68,6 @@ export const marketStats: MarketStat[] = [
     unit: "%減",
     label: "中小企業を希望する学生数",
     note: "中小企業への就職希望者は1年で約3割減少 ※同調査",
-  },
-  {
-    value: "51.7",
-    unit: "%",
-    label: "新潟県内学生の県内就職率",
-    note: "約半数が県外で就職の過去最低水準 ※新潟労働局調べ(2025年3月卒業者)",
   },
 ];
 

@@ -9,7 +9,7 @@ export default function MarketStats() {
           eyebrow="Data"
           title="採用環境は、年々厳しくなっています。"
         />
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
           {marketStats.map((s, i) => (
             <div key={i} className="text-center">
               <p className="text-sm text-gray-500 mb-2">{s.label}</p>

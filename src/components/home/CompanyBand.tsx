@@ -13,7 +13,7 @@ export default function CompanyBand() {
             採用ご担当者の方へ。記事を読んで、気になる学生に会いに行けます。
           </p>
           <p className="text-sm text-gray-500 mt-2">
-            新潟の学生と出会う、新しい採用のかたち。
+            学生と出会う、新しい採用のかたち。
           </p>
         </div>
         <div className="flex items-center gap-3 shrink-0">
