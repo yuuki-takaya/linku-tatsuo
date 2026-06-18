@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ContactButton from "@/components/contact/ContactButton";
 
 export default function CompanyBand() {
   return (
@@ -22,12 +23,7 @@ export default function CompanyBand() {
           >
             企業の方へ
           </Link>
-          <Link
-            href="/business#contact"
-            className="px-5 py-2.5 text-sm font-medium text-brand border border-brand rounded-md hover:bg-brand hover:text-white transition-colors whitespace-nowrap"
-          >
-            お問い合わせ
-          </Link>
+          <ContactButton variant="outline">お問い合わせ</ContactButton>
         </div>
       </div>
     </section>

@@ -1,5 +1,5 @@
-import Link from "next/link";
 import { businessHero } from "@/lib/data/business";
+import ContactButton from "@/components/contact/ContactButton";
 
 export default function BusinessHero() {
   return (
@@ -17,12 +17,7 @@ export default function BusinessHero() {
           {businessHero.lead}
         </p>
         <div className="mt-10">
-          <Link
-            href="#contact"
-            className="inline-block px-7 py-3 text-sm font-medium text-white bg-brand rounded-md hover:opacity-90 transition-opacity"
-          >
-            お問い合わせ・ご相談
-          </Link>
+          <ContactButton>お問い合わせ・ご相談</ContactButton>
         </div>
       </div>
     </section>

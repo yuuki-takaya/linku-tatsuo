@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { operator } from "@/lib/data/business";
+import ContactButton from "@/components/contact/ContactButton";
 
 export default function Footer() {
   return (
@@ -28,12 +29,12 @@ export default function Footer() {
             >
               企業の方へ
             </Link>
-            <Link
-              href="/business#contact"
-              className="text-sm text-gray-500 hover:text-gray-900 transition-colors"
+            <ContactButton
+              variant="link"
+              className="text-sm text-gray-500 hover:text-gray-900 transition-colors text-left"
             >
               お問い合わせ
-            </Link>
+            </ContactButton>
           </nav>
 
           <div className="text-xs text-gray-500 leading-relaxed">

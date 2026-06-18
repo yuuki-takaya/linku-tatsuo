@@ -1,6 +1,6 @@
-import Link from "next/link";
 import { plans } from "@/lib/data/business";
 import SectionHeading from "./SectionHeading";
+import ContactButton from "@/components/contact/ContactButton";
 
 export default function PricingPlans() {
   return (
@@ -48,12 +48,7 @@ export default function PricingPlans() {
           成果報酬は0円。年会費以外の費用はかかりません。
         </p>
         <div className="text-center mt-8">
-          <Link
-            href="#contact"
-            className="inline-block px-7 py-3 text-sm font-medium text-white bg-brand rounded-md hover:opacity-90 transition-opacity"
-          >
-            プランについて相談する
-          </Link>
+          <ContactButton>プランについて相談する</ContactButton>
         </div>
       </div>
     </section>

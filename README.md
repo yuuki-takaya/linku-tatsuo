@@ -35,19 +35,10 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
-## お問い合わせフォーム（Tally）の設定
+## お問い合わせフォーム（Google フォーム）
 
-`/business` ページの問い合わせフォームは Tally の埋め込みを使用します。
+サイト各所の「お問い合わせ」ボタンをクリックすると、モーダルで Google フォームが開きます。
 
-1. [Tally](https://tally.so) でフォームを作成（例：会社名／ご担当者名／メール／電話／希望プラン／相談内容）
-2. フォームの通知先メールを `company@be-u.co.jp` に設定
-3. フォームID（`https://tally.so/r/XXXXXX` の `XXXXXX`）を環境変数に設定：
-
-   ```bash
-   # .env.local
-   NEXT_PUBLIC_TALLY_FORM_ID=XXXXXX
-   ```
-
-   本番（Vercel 等）では同名の環境変数を設定する。
-
-未設定の場合、フォーム枠の代わりに `company@be-u.co.jp` へのメールリンクが表示される（ページは壊れない）。
+- フォームのURLは `src/lib/data/business.ts` の `CONTACT_FORM_URL` で管理しています（差し替え可能。Google フォームの「送信」→「&lt;&gt;（埋め込み）」で得られる `https://docs.google.com/forms/d/e/.../viewform?embedded=true` を設定）。
+- 回答は、その Google フォームに紐づく送信先（フォームの回答／連携スプレッドシート）に届きます。
+- フォールバックとして、モーダル内および問い合わせセクションに `company@be-u.co.jp`（`CONTACT_EMAIL`）へのメールリンクを表示します。

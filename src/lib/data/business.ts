@@ -40,6 +40,9 @@ export interface FlowColumn {
 
 export const CONTACT_EMAIL = "company@be-u.co.jp";
 
+export const CONTACT_FORM_URL =
+  "https://docs.google.com/forms/d/e/1FAIpQLScNIX_WzT5cD5WyZN4qemNgVOcSk5eiYEcF78AcCeAkQZ6xCw/viewform?embedded=true";
+
 export const businessHero = {
   eyebrow: "新潟県内企業の経営者・採用ご担当者様へ",
   titleTop: "待つ採用から、",
