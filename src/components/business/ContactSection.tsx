@@ -81,15 +81,38 @@ export default function ContactSection() {
             <p className="text-gray-900 font-medium">
               {operator.service.role}：{operator.service.company}
             </p>
-            <p className="mt-1">TEL {operator.service.tel}</p>
-            <p>{operator.service.email}</p>
+            <p className="mt-1">
+              TEL{" "}
+              <a
+                href={`tel:${operator.service.tel}`}
+                className="hover:underline"
+              >
+                {operator.service.tel}
+              </a>
+            </p>
+            <a
+              href={`mailto:${operator.service.email}`}
+              className="text-brand hover:underline"
+            >
+              {operator.service.email}
+            </a>
           </div>
           <div>
             <p className="text-gray-900 font-medium">
               {operator.sales.role}：{operator.sales.company}
             </p>
-            <p className="mt-1">TEL {operator.sales.tel}</p>
-            <p>{operator.sales.email}</p>
+            <p className="mt-1">
+              TEL{" "}
+              <a href={`tel:${operator.sales.tel}`} className="hover:underline">
+                {operator.sales.tel}
+              </a>
+            </p>
+            <a
+              href={`mailto:${operator.sales.email}`}
+              className="text-brand hover:underline"
+            >
+              {operator.sales.email}
+            </a>
           </div>
         </div>
       </div>

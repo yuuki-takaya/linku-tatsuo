@@ -5,12 +5,14 @@ export default function HowItWorks() {
   return (
     <section className="py-20">
       <div className="max-w-6xl mx-auto px-6">
-        <SectionHeading eyebrow="How it works" title="LINK Uの仕組み" />
-        <p className="text-sm text-gray-500 -mt-8 mb-12">
-          学生の人柄を知ってから、会って、つながる。
-        </p>
+        <SectionHeading
+          eyebrow="How it works"
+          title="LINK Uの仕組み"
+          subtitle="学生の人柄を知ってから、会って、つながる。"
+        />
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {flowColumns.map((c, i) => {
+            // 中央列（LINK U）を強調
             const highlight = i === 1;
             return (
               <div
