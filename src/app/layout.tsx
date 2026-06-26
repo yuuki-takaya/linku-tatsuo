@@ -3,6 +3,7 @@ import { Noto_Sans_JP } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import DemoNotice from "@/components/layout/DemoNotice";
 import ContactModalProvider from "@/components/contact/ContactModalProvider";
 
 const notoSansJP = Noto_Sans_JP({
@@ -27,6 +28,7 @@ export default function RootLayout({
     <html lang="ja" className={notoSansJP.variable}>
       <body className="font-[var(--font-noto)] bg-white text-gray-900 antialiased">
         <ContactModalProvider>
+          <DemoNotice />
           <Header />
           <main>{children}</main>
           <Footer />
