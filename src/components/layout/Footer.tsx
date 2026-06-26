@@ -48,7 +48,11 @@ export default function Footer() {
           </div>
         </div>
 
-        <p className="text-xs text-gray-300 mt-10">
+        <p className="text-xs text-gray-400 leading-relaxed mt-10 border-t border-gray-100 pt-6">
+          本サイトは10月ローンチに向けた公開デモサイトです（掲載記事はすべて事前に許可をいただいたサンプルです）。本ローンチ以降、学生の皆様のストーリー記事は<span className="text-gray-600">完全会員制のシークレット空間</span>でのみ公開され、一般のネット検索や第三者への公開はされません。
+        </p>
+
+        <p className="text-xs text-gray-300 mt-6">
           © {new Date().getFullYear()} LINK U. All rights reserved.
         </p>
       </div>
