@@ -183,18 +183,6 @@ export const people: Person[] = [
     ],
   },
   {
-    id: "abe-sakura",
-    name: "阿部 さくら",
-    nameRoman: "Sakura Abe",
-    title: "新潟県立大学国際地域学部",
-    bio: "新潟県立大学国際地域学部国際地域学科。2028年春に卒業を予定している。大学では大学生協と連携する学生団体に所属し、学生生活を支えるイベント企画や広報誌の制作リーダーとして尽力した。",
-    imageUrl: "/people/abe-sakura.JPG",
-    tags: [
-      { id: "international", label: "国際" },
-      { id: "community", label: "コミュニティ" },
-    ],
-  },
-  {
     id: "saito-daiki",
     name: "齊藤 大暉",
     nameRoman: "Daiki Saito",
