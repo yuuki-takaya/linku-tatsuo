@@ -135,18 +135,6 @@ export const people: Person[] = [
     ],
   },
   {
-    id: "ishii-ryotaro",
-    name: "石居 凌太郎",
-    nameRoman: "Ryotaro Ishii",
-    title: "新潟大学経済学部3年",
-    bio: "茨城県土浦市出身。高校卒業までを地元で過ごし、大学進学を機に新潟へ移住。現在は新潟大学経済学部の3年生として、ビジネスコンテストへの出場やゼミ活動に精力的に取り組む。海外への一人旅やDJ活動など多趣味な一面を持つ一方、地方創生や金融にも関心を寄せ、将来は地元・土浦への貢献も視野に入れている。中小企業の課題解決を支援する事業での起業を準備中。",
-    imageUrl: "/people/ishi-ryotaro.JPG",
-    tags: [
-      { id: "startup", label: "起業家" },
-      { id: "community", label: "コミュニティ" },
-    ],
-  },
-  {
     id: "jimbo-kota",
     name: "神保 航大",
     nameRoman: "Kodai Jinbo",
