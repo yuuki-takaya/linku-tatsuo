@@ -206,16 +206,4 @@ export const people: Person[] = [
       { id: "management", label: "マネジメント" },
     ],
   },
-  {
-    id: "asai-mirai",
-    name: "浅井 未来",
-    nameRoman: "Mirai Asai",
-    title: "新潟県立大学人間生活学部3年 / 管理栄養士養成課程",
-    bio: "神奈川県川崎市生まれ、宮城県仙台市育ち。大学では管理栄養士養成課程で学びながら、インドネシア、ハワイ、モンゴルなどでの海外研修や個人での海外旅行に多数参加。大学院進学を見据えつつ、タイでの長期ボランティアやミュージカル出演など、多岐にわたる活動に挑戦している。",
-    imageUrl: "/people/asai-mirai.JPG",
-    tags: [
-      { id: "international", label: "国際" },
-      { id: "community", label: "コミュニティ" },
-    ],
-  },
 ];
