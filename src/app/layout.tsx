@@ -5,6 +5,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import DemoNotice from "@/components/layout/DemoNotice";
 import ContactModalProvider from "@/components/contact/ContactModalProvider";
+import GoogleAnalytics from "@/components/analytics/GoogleAnalytics";
 
 const notoSansJP = Noto_Sans_JP({
   subsets: ["latin"],
@@ -33,6 +34,7 @@ export default function RootLayout({
           <main>{children}</main>
           <Footer />
         </ContactModalProvider>
+        <GoogleAnalytics />
       </body>
     </html>
   );
