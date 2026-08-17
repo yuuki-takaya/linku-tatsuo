@@ -42,3 +42,12 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 - フォームのURLは `src/lib/data/business.ts` の `CONTACT_FORM_URL` で管理しています（差し替え可能。Google フォームの「送信」→「&lt;&gt;（埋め込み）」で得られる `https://docs.google.com/forms/d/e/.../viewform?embedded=true` を設定）。
 - 回答は、その Google フォームに紐づく送信先（フォームの回答／連携スプレッドシート）に届きます。
 - フォールバックとして、モーダル内および問い合わせセクションに `company@be-u.co.jp`（`CONTACT_EMAIL`）へのメールリンクを表示します。
+
+## Google Analytics（GA4）
+
+サイトのアクセス数や利用者の行動を Google Analytics で計測しています。
+
+- 測定 ID は `src/lib/data/analytics.ts` の `GA_MEASUREMENT_ID` で管理しており、現在は `G-M4W6JX6LX5` に設定されています（差し替え可能）。
+- タグは `src/components/analytics/GoogleAnalytics.tsx` で読み込まれ、ルートレイアウト `src/app/layout.tsx` からすべてのページに適用されます。
+- 計測は本番ビルド（`NODE_ENV === "production"`）でのみ動作します。`npm run dev` による開発サーバーでは計測は行われません。Vercel プレビュー デプロイも本番ビルドのため、計測の対象となります。
+- ページ間の移動計測は GA4 の拡張計測機能（「ブラウザの履歴イベントに基づくページの変更」）により自動的に計測され、リポジトリ内のコードでは実装していません。
